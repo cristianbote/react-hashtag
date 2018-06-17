@@ -89,30 +89,28 @@ const Card = (props) => (
 ```
 
 ### Reusable or composition 
-You could reuse the same definition, if that's something you're looking for. The following example uses the `withRouter` from React Router and defines a component that will redirect to certain hashtag pages.
+You could reuse the same definition, if that's something you're looking for. The following example uses the anchor and defines a component that will redirect to certain hashtag pages.
 ```jsx harmony
-const StyledHashtag = styled.span`
+const StyledHashtag = styled.a`
     color: tomato;
 `;
 
 /**
 * Custom component to render the hashtags with a custom renderer
 */
-const Hashtags = withRouter(({history}) => (
-    (props) => (
-        <ReactHashtag
-            renderHashtag={(hashtagValue) => (
-                <StyledHashtag
-                    onClick={history.go(`/search/${hashtagValue}`)}
-                >
-                    {hashtagValue}
-                </StyledHashtag>
-            )}
-        >
-            {props.children}
-        </ReactHashtag>
-    )
-));
+const Hashtags = (props) => (
+    <ReactHashtag
+        renderHashtag={(hashtagValue) => (
+            <StyledHashtag
+                href={`/search/${hashtagValue}`}
+            >
+                {hashtagValue}
+            </StyledHashtag>
+        )}
+    >
+        {props.children}
+    </ReactHashtag>
+);
 
 const Card = (props) => (
     <p>
