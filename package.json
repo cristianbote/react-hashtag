@@ -1,6 +1,6 @@
 {
   "name": "react-hashtag",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React hashtags parser with custom renderer and click action on each hashtag.",
   "main": "dist/react-hashtag.js",
   "umd:main": "dist/react-hashtag.umd.js",
