@@ -122,4 +122,4 @@ const Card = (props) => (
 ```
 
 ## Questions?
-Feel free to fill an issue if you have any questions.
+Feel free to file an issue if you have any questions.
