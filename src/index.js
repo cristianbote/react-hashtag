@@ -5,7 +5,10 @@ import {parse} from '../lib';
 const defaultHashtagRenderer = (hashtag, onClick) => (
     React.createElement(
         'span',
-        { key: hashtag, onClick: onClick ? (e) => onClick(hashtag, e) : null },
+        {
+            key: hashtag,
+            onClick: onClick ? (e) => onClick(hashtag, e) : null
+        },
         hashtag
     )
 );

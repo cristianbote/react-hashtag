@@ -1,12 +1,12 @@
 {
   "name": "react-hashtag",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "React hashtags parser with custom renderer and click action on each hashtag.",
   "main": "dist/react-hashtag.js",
   "umd:main": "dist/react-hashtag.umd.js",
   "module": "dist/react-hashtag.m.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --config jest.config.json",
     "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false"
   },
   "keywords": [
