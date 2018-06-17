@@ -1,0 +1,43 @@
+{
+  "name": "react-hashtag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/react-hashtag.js",
+  "umd:main": "dist/react-hashtag.umd.js",
+  "module": "dist/react-hashtag.m.js",
+  "scripts": {
+    "test": "jest",
+    "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false"
+  },
+  "keywords": [
+    "hashtag",
+    "react",
+    "parser",
+    "hashtags"
+  ],
+  "files": [
+    "README.md",
+    "dist",
+    "package.json"
+  ],
+  "author": "Cristian Bote <me@cristianbote.ro>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.1.0",
+    "microbundle": "^0.4.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "prop-types": "*"
+  },
+  "dependencies": {}
+}
