@@ -2,8 +2,13 @@ React Hashtag
 ====
 Enhance your strings with _live_ components.
 
+
+[![npm version](https://badge.fury.io/js/react-hashtag.svg?bust)](https://badge.fury.io/js/react-hashtag)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/cristianbote/react-hashtag.svg?maxAge=2592000)](https://codecov.io/github/cristianbote/react-hashtag?branch=master)
+[![Build Status](https://travis-ci.org/cristianbote/react-hashtag.svg?branch=master)](https://travis-ci.org/cristianbote/react-hashtag)  
+
 ## Features:
-* Super small **258 B**
+* Super small **264 B**
 * Custom renderer for each hashtag
 * Custom 'click' handler for each hashtag
 * Generic output
@@ -83,4 +88,40 @@ const Card = (props) => (
 );
 ```
 
-## 
+### Reusable or composition 
+You could reuse the same definition, if that's something you're looking for. The following example uses the `withRouter` from React Router and defines a component that will redirect to certain hashtag pages.
+```jsx harmony
+const StyledHashtag = styled.span`
+    color: tomato;
+`;
+
+/**
+* Custom component to render the hashtags with a custom renderer
+*/
+const Hashtags = withRouter(({history}) => (
+    (props) => (
+        <ReactHashtag
+            renderHashtag={(hashtagValue) => (
+                <StyledHashtag
+                    onClick={history.go(`/search/${hashtagValue}`)}
+                >
+                    {hashtagValue}
+                </StyledHashtag>
+            )}
+        >
+            {props.children}
+        </ReactHashtag>
+    )
+));
+
+const Card = (props) => (
+    <p>
+        <Hashtags>
+            {props.children}
+        </Hashtags>
+    </p>
+);
+```
+
+## Questions?
+Feel free to fill an issue if you have any questions.
