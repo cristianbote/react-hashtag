@@ -14,6 +14,9 @@ Enhance your strings with _live_ components.
 * Generic output
 * Drop-in and use it. Your code will not have to adapt to anything.
 
+## Demo
+https://codesandbox.io/s/rm7pjy73rn
+
 ## Quick example
 ```jsx harmony
 // Your typical 'component'
@@ -32,7 +35,6 @@ const Card = () => (
     </p>
 );
 ```
-
 
 ## Install
 The usual flow
