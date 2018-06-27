@@ -1,6 +1,6 @@
 import React from 'react';
 import {configure, shallow, mount} from 'enzyme';
-import {ReactHashtag} from './index';
+import ReactHashtag from '../src/index';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });

@@ -7,6 +7,7 @@
   "module": "dist/react-hashtag.m.js",
   "scripts": {
     "test": "jest --config jest.config.json",
+    "test-watch": "jest --config jest.config.json --watch",
     "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false"
   },
   "keywords": [
@@ -31,13 +32,15 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^23.1.0",
     "microbundle": "^0.4.4",
+    "preact": "^8.2.9",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
   "peerDependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "prop-types": "*"
+    "prop-types": "*",
+    "preact": "^8.2.9"
   },
   "dependencies": {}
 }

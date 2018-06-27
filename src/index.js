@@ -1,26 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {parse} from '../lib';
+import { withFramework } from './hashtag';
 
-const defaultHashtagRenderer = (hashtag, onClick) => (
-    React.createElement(
-        'span',
-        {
-            key: hashtag,
-            onClick: onClick ? (e) => onClick(hashtag, e) : null
-        },
-        hashtag
-    )
-);
+const Component = (() => {
+    try {
+        return withFramework(require("react").createElement, true);
+    } catch (err) {
+        try {
+            return withFramework(require("preact").h);
+        } catch (err) {
+            console.log("[react-hashtag] there's no react nor preact available to import");
+        }
+    }
+})();
 
-export const ReactHashtag = (props) => {
-    const contents = props.children;
-    const hashtagRenderer = props.renderHashtag || defaultHashtagRenderer;
-    const onHashtagClick = props.onHashtagClick;
-    return parse(contents, hashtagRenderer, onHashtagClick);
-};
-
-ReactHashtag.propTypes = {
-    'onHashtagClick': PropTypes.func,
-    'renderHashtag': PropTypes.func
-};
+export default Component;
