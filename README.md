@@ -8,7 +8,8 @@ Enhance your strings with _live_ components.
 [![Build Status](https://travis-ci.org/cristianbote/react-hashtag.svg?branch=master)](https://travis-ci.org/cristianbote/react-hashtag)  
 
 ## Features:
-* Super small **264 B**
+* Super small **~430 B**
+* Available for React and Preact
 * Custom renderer for each hashtag
 * Custom 'click' handler for each hashtag
 * Generic output

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {parse} from '../lib';
 
 const defaultHashtagRenderer = createElement => (hashtag, onClick) => (
@@ -13,7 +12,7 @@ const defaultHashtagRenderer = createElement => (hashtag, onClick) => (
 );
 
 export const withFramework = (createElement, canRenderArray) => {    
-    const Hashtag = (props) => {
+    return (props) => {
         const contents = typeof props.children === "object" && props.children.length ? (!isNaN(props.children.length) ? props.children[0] : props.children) : props.children;
         const hashtagRenderer = props.renderHashtag || defaultHashtagRenderer(createElement);
         const onHashtagClick = props.onHashtagClick;
@@ -21,11 +20,4 @@ export const withFramework = (createElement, canRenderArray) => {
 
         return canRenderArray ? parsed : createElement('span', null, parsed);
     };
-    
-    Hashtag.propTypes = {
-        'onHashtagClick': PropTypes.func,
-        'renderHashtag': PropTypes.func
-    };
-    
-    return Hashtag;
 };

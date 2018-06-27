@@ -4,11 +4,10 @@
   "description": "React hashtags parser with custom renderer and click action on each hashtag.",
   "main": "dist/react-hashtag.js",
   "umd:main": "dist/react-hashtag.umd.js",
-  "module": "dist/react-hashtag.m.js",
   "scripts": {
-    "test": "jest --config jest.config.json",
+    "test": "jest --config jest.config.json --coverage",
     "test-watch": "jest --config jest.config.json --watch",
-    "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false"
+    "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false --format cjs,umd"
   },
   "keywords": [
     "hashtag",
@@ -39,7 +38,6 @@
   "peerDependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "prop-types": "*",
     "preact": "^8.2.9"
   },
   "dependencies": {}

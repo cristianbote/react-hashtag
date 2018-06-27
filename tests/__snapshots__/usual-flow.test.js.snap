@@ -5,11 +5,11 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div>
-    <Hashtag
+    <Unknown
       renderHashtag={[Function]}
     >
       #lots #of #hashtags
-    </Hashtag>
+    </Unknown>
   </div>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,11 +23,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Hashtag
+      "children": <Unknown
         renderHashtag={[Function]}
       >
         #lots #of #hashtags
-      </Hashtag>,
+      </Unknown>,
     },
     "ref": null,
     "rendered": Object {
@@ -50,11 +50,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Hashtag
+        "children": <Unknown
           renderHashtag={[Function]}
         >
           #lots #of #hashtags
-        </Hashtag>,
+        </Unknown>,
       },
       "ref": null,
       "rendered": Object {
@@ -87,9 +87,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div>
-    <Hashtag>
+    <Unknown>
       Hello #there fellow #dude#Works?
-    </Hashtag>
+    </Unknown>
   </div>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -103,9 +103,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Hashtag>
+      "children": <Unknown>
         Hello #there fellow #dude#Works?
-      </Hashtag>,
+      </Unknown>,
     },
     "ref": null,
     "rendered": Object {
@@ -127,9 +127,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Hashtag>
+        "children": <Unknown>
           Hello #there fellow #dude#Works?
-        </Hashtag>,
+        </Unknown>,
       },
       "ref": null,
       "rendered": Object {
