@@ -16,7 +16,9 @@ Enhance your strings with _live_ components.
 * Drop-in and use it. Your code will not have to adapt to anything.
 
 ## Demo
-https://codesandbox.io/s/rm7pjy73rn
+React: https://codesandbox.io/s/qxow0z7v49
+
+Preact: https://codesandbox.io/s/qv8qz89ll9
 
 ## Quick example
 ```jsx harmony
@@ -28,6 +30,8 @@ const Card = () => (
 );
 
 // Will become
+import ReactHashtag from "react-hashtag";
+
 const Card = () => (
     <p>
         <ReactHashtag>
