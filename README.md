@@ -51,14 +51,13 @@ npm install react-hashtag --save
 ## Api
 The component `ReactHashtag` is actually pretty generic. Is not something that someone can't do in half an hour. But, this one has some generic API that could make you turn.
 
-### renderHashtag(hashtagValue, onClickHandler): Function
-Returns the custom element to be renderer instead of a `<span>`. You can go wild here.
+| Name | Type | Description
+| ---- | ---- | -----------
+| renderHashtag(value: String, onClick: Function) | function | Returns the custom element to be renderer instead of a `<span>`. You can go wild here.
+| onHashtagClick(value: String, e: Event) | function | The click handler for each hashtags. This will be called with the hashtag value that got clicked.
 
-### onHashtagClick(hashtagValue, event): Function
-The _click_ handler for each hashtag.
 
-
-## Example
+## Examples
 
 ### Custom renderer
 ```jsx harmony
