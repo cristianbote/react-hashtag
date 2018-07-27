@@ -16,7 +16,7 @@ describe('ReactHashtag should behave', () => {
             </div>
         );
 
-        expect(context).toMatchSnapshot();
+        expect(context.html()).toMatchSnapshot();
     });
 
     it('Should render custom hashtags', () => {
@@ -32,11 +32,13 @@ describe('ReactHashtag should behave', () => {
                     #lots
                     #of
                     #hashtags
+                    ＃🤷🏿‍♀️
+                    #thatWasAUnicodeSet
                 </ReactHashtag>
             </div>
         );
 
-        expect(context).toMatchSnapshot();
+        expect(context.html()).toMatchSnapshot();
     });
 
 
