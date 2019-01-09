@@ -22,25 +22,26 @@
     "dist",
     "package.json"
   ],
-  "author": "Cristian Bote <me@cristianbote.ro>",
+  "author": "Cristian Bote <botecristian@yahoo.com>",
+  "repository": "https://github.com/cristianbote/react-hashtag",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.0.1",
+    "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^23.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
     "microbundle": "^0.4.4",
-    "preact": "^8.2.9",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "preact": "^8.4.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "preact": "^8.2.9"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "preact": "^8.4.2"
   },
   "dependencies": {}
 }
