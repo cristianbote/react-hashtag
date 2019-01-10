@@ -1,11 +1,12 @@
 React Hashtag
 ====
-Enhance your strings with _live_ components.
+Enhance your strings with _live_ hashtag components.
 
 
 [![npm version](https://badge.fury.io/js/react-hashtag.svg?bust)](https://badge.fury.io/js/react-hashtag)
 [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/cristianbote/react-hashtag.svg?maxAge=2592000)](https://codecov.io/github/cristianbote/react-hashtag?branch=master)
-[![Build Status](https://travis-ci.org/cristianbote/react-hashtag.svg?branch=master)](https://travis-ci.org/cristianbote/react-hashtag)  
+[![Build Status](https://travis-ci.org/cristianbote/react-hashtag.svg?branch=master)](https://travis-ci.org/cristianbote/react-hashtag)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/react-hashtag/dist/react-hashtag.js?compression=gzip)](https://unpkg.com/react-hashtag)
 
 ## Features:
 * Super small **~430 B**
