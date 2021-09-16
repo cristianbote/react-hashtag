@@ -56,6 +56,7 @@ The component `ReactHashtag` is actually pretty generic. Is not something that s
 | ---- | ---- | -----------
 | renderHashtag(value: String, onClick: Function) | function | Returns the custom element to be renderer instead of a `<span>`. You can go wild here.
 | onHashtagClick(value: String, e: Event) | function | The click handler for each hashtags. This will be called with the hashtag value that got clicked.
+| hashtagRegex(value: Regex) | Regex | Here user can provide the custom regex. According to  this regex matched values will be enclosed in `<span>`.
 
 
 ## Examples
@@ -68,6 +69,20 @@ const Card = (props) => (
             renderHashtag={(hashtagValue) => (
                 <div className="hashtag">{hashtagValue}</div>
             )}
+        >
+            {props.children}
+        </ReactHashtag>
+    </p>
+);
+```
+
+### With Custom Hashtag Regex Prop
+```jsx harmony
+
+const Card = (props) => (
+    <p>
+        <ReactHashtag
+            hashtagRegex={/(?:(?<=\s)|^)#(\w*[a-zA-z]\w*)+\b(?!#)/gm}
         >
             {props.children}
         </ReactHashtag>

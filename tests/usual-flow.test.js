@@ -41,6 +41,18 @@ describe('ReactHashtag should behave', () => {
         expect(context.html()).toMatchSnapshot();
     });
 
+    it('Should render hashtags with custom regex', () => {
+
+        const context = shallow(
+            <div>
+                <ReactHashtag hashtagRegex={/(?:(?<=\s)|^)#(\w*[a-zA-z]\w*)+\b(?!#)/gm}>
+                    Hello #there fellow #dude#Works?
+                </ReactHashtag>
+            </div>
+        );
+
+        expect(context.html()).toMatchSnapshot();
+    });
 
     it('Should handle the hashtag actions', () => {
         const onHashtagClick = jest.fn();

@@ -3,3 +3,5 @@
 exports[`ReactHashtag should behave Should render custom hashtags 1`] = `"<div><div>#lots</div> <div>#of</div> <div>#hashtags</div> <div>＃🤷🏿‍♀️</div> <div>#thatWasAUnicodeSet</div></div>"`;
 
 exports[`ReactHashtag should behave Should render hashtags 1`] = `"<div>Hello <span>#there</span> fellow <span>#dude#Works?</span></div>"`;
+
+exports[`ReactHashtag should behave Should render hashtags with custom regex 1`] = `"<div>Hello <span>#there</span> fellow #dude#Works?</div>"`;

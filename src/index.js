@@ -37,7 +37,7 @@ export default props => {
   const hashtagRenderer =
     props.renderHashtag || defaultHashtagRenderer(createElement);
   const onHashtagClick = props.onHashtagClick;
-  const parsed = parse(contents, hashtagRenderer, onHashtagClick);
+  const parsed = parse(contents, hashtagRenderer, onHashtagClick, props.hashtagRegex);
 
   return canRenderArray ? parsed : createElement("span", null, parsed);
 };
